@@ -456,13 +456,16 @@ body {
         <div class="chapter-filter">
           <div class="filter-label">📚 Chapter Filter</div>
           <div class="filter-chips" id="chFilter">
-            <span class="filter-chip on" data-ch="all" onclick="toggleCh(this)">All Ch. 1–6</span>
+            <span class="filter-chip on" data-ch="all" onclick="toggleCh(this)">All Ch. 1–9</span>
             <span class="filter-chip" data-ch="1" onclick="toggleCh(this)">Ch. 1</span>
             <span class="filter-chip" data-ch="2" onclick="toggleCh(this)">Ch. 2</span>
             <span class="filter-chip" data-ch="3" onclick="toggleCh(this)">Ch. 3</span>
             <span class="filter-chip" data-ch="4" onclick="toggleCh(this)">Ch. 4</span>
             <span class="filter-chip" data-ch="5" onclick="toggleCh(this)">Ch. 5</span>
             <span class="filter-chip" data-ch="6" onclick="toggleCh(this)">Ch. 6</span>
+            <span class="filter-chip" data-ch="7" onclick="toggleCh(this)">Ch. 7</span>
+            <span class="filter-chip" data-ch="8" onclick="toggleCh(this)">Ch. 8</span>
+            <span class="filter-chip" data-ch="9" onclick="toggleCh(this)">Ch. 9</span>
           </div>
         </div>
 
@@ -541,6 +544,24 @@ const VOCAB = [
   { word: "argue",     korean: "말다툼하다",            pos: "v",   ch: 6, sentence: "Students would often ___ about whose turn it was." },
   { word: "awful",     korean: "끔찍한, 형편없는",      pos: "adj", ch: 6, sentence: "The test felt ___ because nobody had studied." },
   { word: "polite",    korean: "예의 바른",             pos: "adj", ch: 6, sentence: "Mrs. Jewls asked everyone to be ___ to each other." },
+  // Ch. 7
+  { word: "trade",      korean: "교환하다, 거래하다",       pos: "v",   ch: 7, sentence: "The kids would ___ their lunches with each other." },
+  { word: "unfair",     korean: "불공평한",                 pos: "adj", ch: 7, sentence: "It felt ___ that some kids got better lunches." },
+  { word: "complain",   korean: "불평하다, 투덜거리다",     pos: "v",   ch: 7, sentence: "Joe would always ___ when things didn't go his way." },
+  { word: "mistake",    korean: "실수, 잘못",               pos: "n",   ch: 7, sentence: "Making a ___ in class made everyone nervous." },
+  { word: "arithmetic", korean: "산수, 계산",               pos: "n",   ch: 7, sentence: "Mrs. Jewls taught ___ every morning." },
+  // Ch. 8
+  { word: "recess",     korean: "쉬는 시간",               pos: "n",   ch: 8, sentence: "Everyone ran outside as soon as ___ started." },
+  { word: "dare",       korean: "감히 ~하다",               pos: "v",   ch: 8, sentence: "Nobody would ___ to talk back to Mrs. Gorf." },
+  { word: "scream",     korean: "소리치다, 비명 지르다",    pos: "v",   ch: 8, sentence: "She would ___ whenever someone got the wrong answer." },
+  { word: "disappear",  korean: "사라지다",                 pos: "v",   ch: 8, sentence: "The apple seemed to ___ right before their eyes." },
+  { word: "lonely",     korean: "외로운, 쓸쓸한",           pos: "adj", ch: 8, sentence: "The new student felt very ___ on the first day." },
+  // Ch. 9
+  { word: "jealous",    korean: "질투하는, 부러워하는",     pos: "adj", ch: 9, sentence: "Dana was ___ of her friend's new pencil case." },
+  { word: "trouble",    korean: "말썽, 곤란",               pos: "n",   ch: 9, sentence: "Getting into ___ meant staying after school." },
+  { word: "imagine",    korean: "상상하다",                 pos: "v",   ch: 9, sentence: "It was hard to ___ a school with no windows." },
+  { word: "whisper",    korean: "속삭이다",                 pos: "v",   ch: 9, sentence: "She had to ___ so the teacher wouldn't hear." },
+  { word: "escape",     korean: "탈출하다, 빠져나가다",     pos: "v",   ch: 9, sentence: "There was no way to ___ from the homework." },
 ];
 
 let quizMode = "meaning";
