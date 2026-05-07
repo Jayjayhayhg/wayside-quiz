@@ -139,10 +139,10 @@ body {
   gap: 6px;
 }
 .filter-chip {
-  padding: 5px 14px;
+  padding: 4px 10px;
   border-radius: 20px;
   border: 2px solid #ddd;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
@@ -456,7 +456,7 @@ body {
         <div class="chapter-filter">
           <div class="filter-label">📚 Chapter Filter</div>
           <div class="filter-chips" id="chFilter">
-            <span class="filter-chip on" data-ch="all" onclick="toggleCh(this)">All Ch. 1–9</span>
+            <span class="filter-chip on" data-ch="all" onclick="toggleCh(this)">All Ch. 1–30</span>
             <span class="filter-chip" data-ch="1" onclick="toggleCh(this)">Ch. 1</span>
             <span class="filter-chip" data-ch="2" onclick="toggleCh(this)">Ch. 2</span>
             <span class="filter-chip" data-ch="3" onclick="toggleCh(this)">Ch. 3</span>
@@ -466,6 +466,27 @@ body {
             <span class="filter-chip" data-ch="7" onclick="toggleCh(this)">Ch. 7</span>
             <span class="filter-chip" data-ch="8" onclick="toggleCh(this)">Ch. 8</span>
             <span class="filter-chip" data-ch="9" onclick="toggleCh(this)">Ch. 9</span>
+            <span class="filter-chip" data-ch="10" onclick="toggleCh(this)">Ch. 10</span>
+            <span class="filter-chip" data-ch="11" onclick="toggleCh(this)">Ch. 11</span>
+            <span class="filter-chip" data-ch="12" onclick="toggleCh(this)">Ch. 12</span>
+            <span class="filter-chip" data-ch="13" onclick="toggleCh(this)">Ch. 13</span>
+            <span class="filter-chip" data-ch="14" onclick="toggleCh(this)">Ch. 14</span>
+            <span class="filter-chip" data-ch="15" onclick="toggleCh(this)">Ch. 15</span>
+            <span class="filter-chip" data-ch="16" onclick="toggleCh(this)">Ch. 16</span>
+            <span class="filter-chip" data-ch="17" onclick="toggleCh(this)">Ch. 17</span>
+            <span class="filter-chip" data-ch="18" onclick="toggleCh(this)">Ch. 18</span>
+            <span class="filter-chip" data-ch="19" onclick="toggleCh(this)">Ch. 19</span>
+            <span class="filter-chip" data-ch="20" onclick="toggleCh(this)">Ch. 20</span>
+            <span class="filter-chip" data-ch="21" onclick="toggleCh(this)">Ch. 21</span>
+            <span class="filter-chip" data-ch="22" onclick="toggleCh(this)">Ch. 22</span>
+            <span class="filter-chip" data-ch="23" onclick="toggleCh(this)">Ch. 23</span>
+            <span class="filter-chip" data-ch="24" onclick="toggleCh(this)">Ch. 24</span>
+            <span class="filter-chip" data-ch="25" onclick="toggleCh(this)">Ch. 25</span>
+            <span class="filter-chip" data-ch="26" onclick="toggleCh(this)">Ch. 26</span>
+            <span class="filter-chip" data-ch="27" onclick="toggleCh(this)">Ch. 27</span>
+            <span class="filter-chip" data-ch="28" onclick="toggleCh(this)">Ch. 28</span>
+            <span class="filter-chip" data-ch="29" onclick="toggleCh(this)">Ch. 29</span>
+            <span class="filter-chip" data-ch="30" onclick="toggleCh(this)">Ch. 30</span>
           </div>
         </div>
 
@@ -520,30 +541,42 @@ body {
 
 <script>
 const VOCAB = [
-  { word: "terrible",  korean: "끔찍한, 무서운",      pos: "adj", ch: 1, sentence: "Mrs. Gorf had a ___ temper." },
-  { word: "temper",    korean: "화, 성질",              pos: "n",   ch: 1, sentence: "She lost her ___ and screamed." },
-  { word: "misbehave", korean: "나쁘게 행동하다",       pos: "v",   ch: 1, sentence: "Students who ___ will be punished." },
+  // Ch. 1 — 5 words
+  { word: "terrible",  korean: "끔찍한, 무서운",        pos: "adj", ch: 1, sentence: "Mrs. Gorf had a ___ temper." },
   { word: "wiggle",    korean: "흔들다, 꼼지락거리다",  pos: "v",   ch: 1, sentence: "She would ___ her nose to cast a spell." },
   { word: "enormous",  korean: "거대한, 엄청난",        pos: "adj", ch: 1, sentence: "The building was ___ — thirty floors tall!" },
-  { word: "cafeteria", korean: "학교 식당",             pos: "n",   ch: 1, sentence: "Lunch was served in the ___ on the wrong floor." },
-  { word: "confused",  korean: "혼란스러운",            pos: "adj", ch: 1, sentence: "The builder was very ___ by the strange plans." },
   { word: "punish",    korean: "벌을 주다",             pos: "v",   ch: 1, sentence: "The teacher liked to ___ naughty students." },
-  { word: "instead",   korean: "대신에",                pos: "adv", ch: 1, sentence: "She turned them into apples ___ of apples." },
+  { word: "cafeteria", korean: "학교 식당",             pos: "n",   ch: 1, sentence: "Lunch was served in the ___ on the wrong floor." },
+  // Ch. 2 — 5 words
   { word: "pretend",   korean: "~인 척하다",            pos: "v",   ch: 2, sentence: "Louis would ___ not to hear them calling." },
   { word: "holler",    korean: "소리치다, 외치다",      pos: "v",   ch: 2, sentence: "They would ___ from the top of the school." },
   { word: "ignore",    korean: "무시하다",              pos: "v",   ch: 2, sentence: "Louis tried to ___ the noise from outside." },
+  { word: "yell",      korean: "외치다, 고함치다",      pos: "v",   ch: 2, sentence: "He had to ___ to be heard from the playground." },
+  { word: "yard",      korean: "마당, 운동장",          pos: "n",   ch: 2, sentence: "The kids played in the ___ after lunch." },
+  // Ch. 3 — 5 words
   { word: "patient",   korean: "참을성 있는",           pos: "adj", ch: 3, sentence: "Mrs. Jewls was always ___ with her class." },
   { word: "disturb",   korean: "방해하다",              pos: "v",   ch: 3, sentence: "Please do not ___ the class during reading time." },
   { word: "peculiar",  korean: "이상한, 특이한",        pos: "adj", ch: 3, sentence: "Something ___ was always happening in Room 30." },
-  { word: "curious",   korean: "호기심 많은",           pos: "adj", ch: 4, sentence: "Sharie was very ___ about everything." },
+  { word: "kindly",    korean: "친절하게",              pos: "adv", ch: 3, sentence: "She ___ helped the new student find a seat." },
+  { word: "curious",   korean: "호기심 많은",           pos: "adj", ch: 3, sentence: "The students were ___ about the new teacher." },
+  // Ch. 4 — 5 words
   { word: "drool",     korean: "침을 흘리다",           pos: "v",   ch: 4, sentence: "She would ___ while she slept on her desk." },
   { word: "bother",    korean: "귀찮게 하다",           pos: "v",   ch: 4, sentence: "It didn't ___ anyone that she slept in class." },
+  { word: "nap",       korean: "낮잠",                  pos: "n",   ch: 4, sentence: "She took a ___ every afternoon at her desk." },
+  { word: "wake",      korean: "깨우다, 깨다",          pos: "v",   ch: 4, sentence: "Nobody wanted to ___ her up when she was sleeping." },
+  { word: "snore",     korean: "코를 골다",             pos: "v",   ch: 4, sentence: "She would ___ so loudly the whole class could hear." },
+  // Ch. 5 — 5 words
   { word: "nonsense",  korean: "말도 안 되는 것, 헛소리", pos: "n", ch: 5, sentence: "He said the ghost story was all ___." },
   { word: "fair",      korean: "공평한",                pos: "adj", ch: 5, sentence: "It's not ___ if only some students get extra time." },
   { word: "strict",    korean: "엄격한",                pos: "adj", ch: 5, sentence: "The rules in Room 30 were very ___ at first." },
+  { word: "rule",      korean: "규칙",                  pos: "n",   ch: 5, sentence: "Every classroom had a ___ about raising your hand." },
+  { word: "warn",      korean: "경고하다",              pos: "v",   ch: 5, sentence: "The teacher had to ___ the class to be quiet." },
+  // Ch. 6 — 5 words
   { word: "argue",     korean: "말다툼하다",            pos: "v",   ch: 6, sentence: "Students would often ___ about whose turn it was." },
   { word: "awful",     korean: "끔찍한, 형편없는",      pos: "adj", ch: 6, sentence: "The test felt ___ because nobody had studied." },
   { word: "polite",    korean: "예의 바른",             pos: "adj", ch: 6, sentence: "Mrs. Jewls asked everyone to be ___ to each other." },
+  { word: "manners",   korean: "예절, 예의",            pos: "n",   ch: 6, sentence: "Good ___ meant saying please and thank you." },
+  { word: "rude",      korean: "무례한",                pos: "adj", ch: 6, sentence: "It is ___ to interrupt someone who is speaking." },
   // Ch. 7
   { word: "trade",      korean: "교환하다, 거래하다",       pos: "v",   ch: 7, sentence: "The kids would ___ their lunches with each other." },
   { word: "unfair",     korean: "불공평한",                 pos: "adj", ch: 7, sentence: "It felt ___ that some kids got better lunches." },
@@ -562,6 +595,132 @@ const VOCAB = [
   { word: "imagine",    korean: "상상하다",                 pos: "v",   ch: 9, sentence: "It was hard to ___ a school with no windows." },
   { word: "whisper",    korean: "속삭이다",                 pos: "v",   ch: 9, sentence: "She had to ___ so the teacher wouldn't hear." },
   { word: "escape",     korean: "탈출하다, 빠져나가다",     pos: "v",   ch: 9, sentence: "There was no way to ___ from the homework." },
+  // Ch. 10
+  { word: "ordinary",   korean: "평범한, 보통의",           pos: "adj", ch: 10, sentence: "Nothing was ___ about Wayside School." },
+  { word: "notice",     korean: "알아채다, 주목하다",       pos: "v",   ch: 10, sentence: "Did you ___ something strange about her ears?" },
+  { word: "extra",      korean: "추가의, 여분의",           pos: "adj", ch: 10, sentence: "She always carried an ___ pencil just in case." },
+  { word: "remind",     korean: "상기시키다",               pos: "v",   ch: 10, sentence: "Please ___ me to bring my homework tomorrow." },
+  { word: "allow",      korean: "허락하다, 허용하다",       pos: "v",   ch: 10, sentence: "Mrs. Jewls would not ___ talking during the test." },
+  // Ch. 11
+  { word: "talented",   korean: "재능 있는",                pos: "adj", ch: 11, sentence: "Calvin was very ___ at drawing pictures." },
+  { word: "delivery",   korean: "배달, 전달",               pos: "n",   ch: 11, sentence: "He had to make a ___ to every classroom." },
+  { word: "mix up",     korean: "뒤섞다, 혼동하다",         pos: "v",   ch: 11, sentence: "He always seemed to ___ the room numbers." },
+  { word: "lost",       korean: "길을 잃은, 분실된",        pos: "adj", ch: 11, sentence: "He got ___ trying to find the right floor." },
+  { word: "direction",  korean: "방향, 지시",               pos: "n",   ch: 11, sentence: "He forgot to follow the ___ on the note." },
+  // Ch. 12
+  { word: "secret",     korean: "비밀",                     pos: "n",   ch: 12, sentence: "Jason promised to keep her ___ safe." },
+  { word: "tease",      korean: "놀리다, 괴롭히다",         pos: "v",   ch: 12, sentence: "The kids would ___ each other about their names." },
+  { word: "nickname",   korean: "별명",                     pos: "n",   ch: 12, sentence: "Everyone in class had a funny ___." },
+  { word: "embarrass",  korean: "당황하게 하다",            pos: "v",   ch: 12, sentence: "It would ___ her when people mispronounced her name." },
+  { word: "pronounce",  korean: "발음하다",                 pos: "v",   ch: 12, sentence: "Nobody could ___ her name correctly." },
+  // Ch. 13
+  { word: "brave",      korean: "용감한",                   pos: "adj", ch: 13, sentence: "You have to be ___ to raise your hand in class." },
+  { word: "obey",       korean: "따르다, 복종하다",         pos: "v",   ch: 13, sentence: "Students were expected to ___ the class rules." },
+  { word: "request",    korean: "요청, 부탁",               pos: "n",   ch: 13, sentence: "She made a ___ to sit near the window." },
+  { word: "refuse",     korean: "거절하다",                 pos: "v",   ch: 13, sentence: "He would ___ to do anything he thought was unfair." },
+  { word: "deserve",    korean: "~을 받을 자격이 있다",     pos: "v",   ch: 13, sentence: "Good students ___ to be praised." },
+  // Ch. 14
+  { word: "dizzy",      korean: "어지러운",                 pos: "adj", ch: 14, sentence: "Looking down from the top floor made her ___." },
+  { word: "balance",    korean: "균형을 잡다",              pos: "v",   ch: 14, sentence: "It was hard to ___ on one foot for so long." },
+  { word: "crash",      korean: "충돌하다, 부딪히다",       pos: "v",   ch: 14, sentence: "He would ___ into things when he wasn't looking." },
+  { word: "clumsy",     korean: "서투른, 어설픈",           pos: "adj", ch: 14, sentence: "The ___ boy knocked over the whole stack of books." },
+  { word: "careful",    korean: "조심하는, 신중한",         pos: "adj", ch: 14, sentence: "Be ___ when you walk near the edge." },
+  // Ch. 15
+  { word: "replace",    korean: "교체하다, 대신하다",       pos: "v",   ch: 15, sentence: "Nobody could ___ the teacher they loved." },
+  { word: "rumor",      korean: "소문",                     pos: "n",   ch: 15, sentence: "A ___ spread quickly through all thirty floors." },
+  { word: "believe",    korean: "믿다",                     pos: "v",   ch: 15, sentence: "It was hard to ___ everything the students said." },
+  { word: "strange",    korean: "이상한, 낯선",             pos: "adj", ch: 15, sentence: "Something ___ was happening in the classroom." },
+  { word: "truth",      korean: "진실, 사실",               pos: "n",   ch: 15, sentence: "Nobody knew the ___ about what really happened." },
+  // Ch. 16
+  { word: "gloomy",     korean: "우울한, 침침한",           pos: "adj", ch: 16, sentence: "The hallway was dark and ___ without any lights." },
+  { word: "cheer up",   korean: "기운을 내다, 위로하다",    pos: "v",   ch: 16, sentence: "Her friends tried to ___ her after the bad grade." },
+  { word: "hopeless",   korean: "희망 없는, 절망적인",      pos: "adj", ch: 16, sentence: "He felt ___ when he couldn't solve the problem." },
+  { word: "encourage",  korean: "격려하다",                 pos: "v",   ch: 16, sentence: "Mrs. Jewls would always ___ students to try again." },
+  { word: "joy",        korean: "기쁨",                     pos: "n",   ch: 16, sentence: "There was great ___ when the class finished the test." },
+  // Ch. 17
+  { word: "contest",    korean: "대회, 경연",               pos: "n",   ch: 17, sentence: "They held a ___ to see who could read the fastest." },
+  { word: "prize",      korean: "상, 상품",                 pos: "n",   ch: 17, sentence: "The ___ for winning was an extra recess." },
+  { word: "compete",    korean: "경쟁하다",                 pos: "v",   ch: 17, sentence: "Every student wanted to ___ for the gold star." },
+  { word: "cheat",      korean: "속이다, 부정행위를 하다",  pos: "v",   ch: 17, sentence: "It's never okay to ___ on a test." },
+  { word: "honest",     korean: "정직한",                   pos: "adj", ch: 17, sentence: "Mrs. Jewls always asked her students to be ___." },
+  // Ch. 18
+  { word: "bully",      korean: "괴롭히다, 약자를 못살게 굴다", pos: "v", ch: 18, sentence: "Nobody liked the student who would ___ others." },
+  { word: "protect",    korean: "보호하다",                 pos: "v",   ch: 18, sentence: "The older kids would ___ the younger ones." },
+  { word: "threat",     korean: "위협, 협박",               pos: "n",   ch: 18, sentence: "She ignored every ___ and stood her ground." },
+  { word: "stand up",   korean: "맞서다, 일어서다",         pos: "v",   ch: 18, sentence: "It takes courage to ___ to a bully." },
+  { word: "courage",    korean: "용기",                     pos: "n",   ch: 18, sentence: "She showed real ___ by speaking in front of everyone." },
+  // Ch. 19
+  { word: "talented",   korean: "재능 있는",                pos: "adj", ch: 19, sentence: "She was ___ at singing and everyone clapped." },
+  { word: "perform",    korean: "공연하다, 수행하다",       pos: "v",   ch: 19, sentence: "They were asked to ___ in front of the whole school." },
+  { word: "nervous",    korean: "긴장한, 불안한",           pos: "adj", ch: 19, sentence: "He felt ___ before going up on the stage." },
+  { word: "audience",   korean: "관객, 청중",               pos: "n",   ch: 19, sentence: "The ___ clapped loudly after the performance." },
+  { word: "applaud",    korean: "박수치다",                 pos: "v",   ch: 19, sentence: "Everyone started to ___ when she finished singing." },
+  // Ch. 20
+  { word: "selfish",    korean: "이기적인",                 pos: "adj", ch: 20, sentence: "It was ___ to take all the crayons for yourself." },
+  { word: "share",      korean: "나누다, 공유하다",         pos: "v",   ch: 20, sentence: "Good friends always ___ what they have." },
+  { word: "generous",   korean: "관대한, 너그러운",         pos: "adj", ch: 20, sentence: "She was very ___ and gave away her extra snack." },
+  { word: "greedy",     korean: "욕심 많은",                pos: "adj", ch: 20, sentence: "The ___ student took three cookies instead of one." },
+  { word: "kindness",   korean: "친절함",                   pos: "n",   ch: 20, sentence: "A small act of ___ can make someone's whole day better." },
+  // Ch. 21
+  { word: "expect",     korean: "기대하다, 예상하다",       pos: "v",   ch: 21, sentence: "Nobody could ___ what would happen next in Room 30." },
+  { word: "solution",   korean: "해결책",                   pos: "n",   ch: 21, sentence: "They searched for a ___ to the strange problem." },
+  { word: "confess",    korean: "고백하다, 자백하다",       pos: "v",   ch: 21, sentence: "He finally decided to ___ what he had done wrong." },
+  { word: "fault",      korean: "잘못, 실수",               pos: "n",   ch: 21, sentence: "It was nobody's ___ that things turned out that way." },
+  { word: "apologize",  korean: "사과하다",                 pos: "v",   ch: 21, sentence: "She was asked to ___ in front of the whole class." },
+  // Ch. 22
+  { word: "cooperate",  korean: "협력하다, 협동하다",       pos: "v",   ch: 22, sentence: "Everyone had to ___ to get the project finished." },
+  { word: "teamwork",   korean: "팀워크, 협동",             pos: "n",   ch: 22, sentence: "Good ___ meant everyone did their part." },
+  { word: "argue",      korean: "말다툼하다",               pos: "v",   ch: 22, sentence: "They began to ___ over who had the better idea." },
+  { word: "agreement",  korean: "합의, 동의",               pos: "n",   ch: 22, sentence: "They finally reached an ___ after a long discussion." },
+  { word: "respect",    korean: "존중하다",                 pos: "v",   ch: 22, sentence: "Students were taught to ___ each other's opinions." },
+  // Ch. 23
+  { word: "talent",     korean: "재능, 소질",               pos: "n",   ch: 23, sentence: "Everyone in Room 30 had a special ___." },
+  { word: "unique",     korean: "독특한, 유일한",           pos: "adj", ch: 23, sentence: "Each student had a ___ way of solving problems." },
+  { word: "discover",   korean: "발견하다",                 pos: "v",   ch: 23, sentence: "She was excited to ___ her hidden ability." },
+  { word: "celebrate",  korean: "축하하다",                 pos: "v",   ch: 23, sentence: "The class would ___ every student's birthday." },
+  { word: "proud",      korean: "자랑스러운",               pos: "adj", ch: 23, sentence: "She felt ___ when her drawing was put on the wall." },
+  // Ch. 24
+  { word: "miserable",  korean: "비참한, 불행한",           pos: "adj", ch: 24, sentence: "He felt ___ after losing his favorite book." },
+  { word: "comfort",    korean: "위로하다, 위안",           pos: "v",   ch: 24, sentence: "Her friend sat next to her to ___ her." },
+  { word: "upset",      korean: "속상한, 화가 난",          pos: "adj", ch: 24, sentence: "She was very ___ when she lost her pencil case." },
+  { word: "support",    korean: "지지하다, 응원하다",       pos: "v",   ch: 24, sentence: "The class tried to ___ each other during hard times." },
+  { word: "recover",    korean: "회복하다",                 pos: "v",   ch: 24, sentence: "It took her a while to ___ from the bad news." },
+  // Ch. 25
+  { word: "memory",     korean: "기억, 추억",               pos: "n",   ch: 25, sentence: "She had a strong ___ for every student's name." },
+  { word: "forget",     korean: "잊다",                     pos: "v",   ch: 25, sentence: "He would always ___ to bring his pencil." },
+  { word: "remind",     korean: "상기시키다",               pos: "v",   ch: 25, sentence: "She had to ___ herself what day it was." },
+  { word: "important",  korean: "중요한",                   pos: "adj", ch: 25, sentence: "It is ___ to listen carefully in class." },
+  { word: "experience", korean: "경험, 체험",               pos: "n",   ch: 25, sentence: "Every day at Wayside School was a new ___." },
+  // Ch. 26
+  { word: "lazy",       korean: "게으른",                   pos: "adj", ch: 26, sentence: "A ___ student never finishes homework on time." },
+  { word: "effort",     korean: "노력",                     pos: "n",   ch: 26, sentence: "She put a lot of ___ into her science project." },
+  { word: "responsible",korean: "책임감 있는",              pos: "adj", ch: 26, sentence: "A ___ student always brings the right materials." },
+  { word: "habit",      korean: "습관",                     pos: "n",   ch: 26, sentence: "Reading every day is a great ___." },
+  { word: "improve",    korean: "향상되다, 나아지다",       pos: "v",   ch: 26, sentence: "She worked hard to ___ her spelling every week." },
+  // Ch. 27
+  { word: "mystery",    korean: "수수께끼, 미스터리",       pos: "n",   ch: 27, sentence: "Nobody could solve the ___ of the missing chalk." },
+  { word: "clue",       korean: "단서, 힌트",               pos: "n",   ch: 27, sentence: "He found a ___ hidden under the desk." },
+  { word: "investigate",korean: "조사하다",                 pos: "v",   ch: 27, sentence: "They decided to ___ the strange noise in the hall." },
+  { word: "suspicious", korean: "의심스러운",               pos: "adj", ch: 27, sentence: "Something about his story seemed very ___." },
+  { word: "prove",      korean: "증명하다",                 pos: "v",   ch: 27, sentence: "She needed to ___ that she hadn't taken the eraser." },
+  // Ch. 28
+  { word: "attach",     korean: "붙이다, 첨부하다",         pos: "v",   ch: 28, sentence: "She would ___ gold stars to the best papers." },
+  { word: "reward",     korean: "보상, 상",                 pos: "n",   ch: 28, sentence: "A gold star was the best ___ in Room 30." },
+  { word: "deserve",    korean: "~을 받을 자격이 있다",     pos: "v",   ch: 28, sentence: "Every student who tried hard ___ a gold star." },
+  { word: "announce",   korean: "발표하다, 알리다",         pos: "v",   ch: 28, sentence: "Mrs. Jewls would ___ the winner in front of everyone." },
+  { word: "special",    korean: "특별한",                   pos: "adj", ch: 28, sentence: "Each student was ___ in their own way." },
+  // Ch. 29
+  { word: "graduation", korean: "졸업",                     pos: "n",   ch: 29, sentence: "___ day was both exciting and sad for everyone." },
+  { word: "farewell",   korean: "작별 인사",                pos: "n",   ch: 29, sentence: "They said ___ to their friends with tears in their eyes." },
+  { word: "grateful",   korean: "감사하는",                 pos: "adj", ch: 29, sentence: "She was ___ for all the memories they had made." },
+  { word: "miss",       korean: "그리워하다",               pos: "v",   ch: 29, sentence: "They knew they would ___ each other very much." },
+  { word: "forever",    korean: "영원히",                   pos: "adv", ch: 29, sentence: "Their friendship would last ___." },
+  // Ch. 30
+  { word: "ordinary",   korean: "평범한, 보통의",           pos: "adj", ch: 30, sentence: "No other school was quite as ___ as Wayside." },
+  { word: "wonder",     korean: "궁금해하다, 경이롭다",     pos: "v",   ch: 30, sentence: "She would always ___ what the next year would bring." },
+  { word: "adventure",  korean: "모험",                     pos: "n",   ch: 30, sentence: "Every day at Wayside was a new ___." },
+  { word: "cherish",    korean: "소중히 여기다",            pos: "v",   ch: 30, sentence: "They would ___ every memory from Room 30." },
+  { word: "unforgettable", korean: "잊을 수 없는",          pos: "adj", ch: 30, sentence: "Wayside School was truly ___." },
 ];
 
 let quizMode = "meaning";
